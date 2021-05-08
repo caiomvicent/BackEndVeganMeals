@@ -1,5 +1,5 @@
 
-const morgan = require('morgan')
+//const morgan = require('morgan')
 const express = require('express')
 const cors = require("cors");
 
@@ -9,14 +9,14 @@ class AppController {
     constructor() {
         this.express = express();
 
-        this.morgan()
+        //this.morgan()
         this.middlewares();
         this.routes();
 
     }
-    morgan() {
+    /*morgan() {
         this.express.use(morgan('dev'))
-    }
+    }*/
 
     middlewares() {
 
