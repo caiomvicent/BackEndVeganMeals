@@ -1,6 +1,6 @@
 const axios = require("axios")
 const api = axios.create({
-    baseURL: "https://www.themealdb.com/api/json/v1/1/",
+    baseURL: process.env.BASE_URL,
 });
 
 
